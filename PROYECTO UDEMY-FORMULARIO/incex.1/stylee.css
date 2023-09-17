@@ -1,0 +1,283 @@
+*, *:after,*::before{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --black:#200a0adc;
+    --blue:#14b3c5;
+    --amarillo:#ffee00;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-snap-type: & mandatory;
+}
+
+body{
+  background-image: linear-gradient(to top,#dfe9f3 0%,#fff 100%);
+}
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+                    /*header*/
+.header{
+    text-align: center;
+    padding: 0px;
+    
+}
+.header h1{
+    font-size: 3.8rem;
+}
+
+.header span{
+    font-size: 1rem;
+}
+                /*header end*/
+
+                /*nav*/
+.contenedor{
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.section__nav{
+    background-color: var(--blue);
+}
+
+.nav-principal{
+   flex-direction: column;
+   align-items: center;
+}
+
+.nav-principal a{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem ;
+}
+
+.nav-principal a:hover{
+   background:var(--amarillo) ;
+   color: #000;
+   transition: all 1.2s;
+}
+
+              /*media-quaris*/
+@media (min-width: 480px) {
+
+}          
+
+
+@media (min-width: 768px) {
+    .nav-principal{
+        display: flex;
+        flex-direction:row ;
+        font-size: .2rem;
+        justify-content: space-between;
+    }
+
+    .nav-principal a{
+        text-decoration: none;
+    }
+    .bottom{
+        width: auto;
+    }
+
+    
+    
+
+}
+
+
+                  /*section contactar*/
+
+
+
+.section__hero-h{
+    display: flex;
+    position: absolute;
+    background: rgba( 0,0,0, .5);
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__h2-1 a{
+    color: #fff;
+    text-decoration: none;
+    cursor: grab;
+}
+
+.section__hero{
+   background-image: url(../image/estudios.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 400px;
+   position: relative;
+   margin-bottom: 1.8rem;
+}
+
+.section__h2-1{
+   color:#fff;
+}
+
+
+.bottom{
+    background-color: var(--blue);
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+    cursor: pointer;
+    border: none;
+}
+
+@media (min-width: 760px) {
+   .bottom{
+     width: auto;
+   }    
+
+}
+
+.bottom:hover{
+    background-color: #1199a8;
+    color: #000;
+    transition: all 1.2s;
+}
+                         /*main*/
+.contain{
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(96,94,112,1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(96,94,112,1);
+    box-shadow: 0px 0px 15px 0px rgba(96,94,112,1); 
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.contain h2{
+    text-align: center;
+}
+
+
+
+.secction__contactar{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    column-gap: 2rem;
+}
+
+
+
+@media (max-width: 768px) {
+   .secction__contactar{
+    display: flex;
+    flex-direction: column;
+   }
+}
+
+.section__article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__article h3{
+    font-weight: 900;
+   color: #1199a8;
+}
+.section__article p{
+    line-height: 1;
+    font-size: 1.6rem;
+}
+
+.section__article .iconos{
+    display: flex;
+    height:15rem ;
+    width: 15rem;
+    background: var(--amarillo);
+    border-radius: 50%;   
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+                      /*formulario */
+
+.form__fielset{
+    background-color: #757575;
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 15px 0px rgba(96,94,112,1);
+    color:#fff;
+}
+
+.form__fielset fieldset{
+    border: none;
+}
+
+.form__fielset legend{
+    color: var(--amarillo);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+                    /*formulario-contactar*/
+
+
+
+.campos{
+    margin-bottom: 1rem;
+}
+
+.campos label{
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.campos input{
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+.enviar .bottom{
+     width: 100%;
+}
+
+.campos textarea{
+    height: 20rem;
+}
+
+                     /*footer*/
+
+
+.footer{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+

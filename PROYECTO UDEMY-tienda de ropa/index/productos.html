@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../stylees/style.css"> 
+    <link rel="stylesheet" href="../stylees/normalice.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo Proyecto-Udemy proyect</title>
+</head>
+<body>
+                                 <!--header-->
+    <header class="header">
+        <a href="index.html">
+           <img class="header__logo" src="../extras/FRONT3X-Logo.png" alt="logotipo">
+        </a> 
+    </header>
+
+                                  <!--nav-->
+    <nav class="nav"><a href="index.html">Tienda</a>
+        <a class="nav__a" href="nostros.html">Nosotros</a>
+    </nav>
+
+    <main class="main">
+        <h1 class="main__h1 h1__main">GitHub</h1>
+        
+        <article class="camisa">
+            <img class="camisa__img" src="../extras/github.jpeg" alt="imagen del producto">
+
+            <div class="camisa__contenido container">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente quae dicta dolores illum totam sequi, enim velit placeat veniam deserunt. Suscipit qui sit non sunt? Deleniti ad reprehenderit quasi repellendus.
+                </p>
+                <form class="formulario">
+                    <select class="selected__form"><!--select te da un selector de opciones(por eso viene la option despues)-->
+                        <option disabled selected>-->seleccionar talla<--</option><!--atributo(disable)sirve para que aparesca en la opcion pero no se pueda seleccionar-->
+                        <option>chica</option>
+                        <option>mediana</option>
+                        <option>grande</option>
+                    </select>
+                     <!--<select name="" id="">
+                        <option disabled selected>cuantas unidades<--</option>selected aparecera primeramente pero despues no se podra seleccionar de nuevo
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>-->
+                    <input class="input__number" type="number" placeholder="unidades" min="1">
+                    <input class="input__submit" type="submit" value="agregar al carrito">
+                </form>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__p">
+            Front End Store -- todos los derechos reservados 2023-benjamin lopez
+        </p>
+    </footer>
+</body>
+</html>

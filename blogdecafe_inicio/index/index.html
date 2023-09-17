@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pagina web de blog de cafe">
+    <!--prefetch-recarga antes la pagina para una mejor experiencia--->
+    <link rel="prefetch" href="nosotros.html" as="Document">
+    <link rel="prefetch" href="cursos.html" as="Document">
+    <link rel="prefetch" href="entrada.html" as="Document">
+    <link rel="prefetch" href="contacto.html" as="Document">
+
+      <!--preload-->
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:ital,wght@1,400;1,700&display=swap" crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="../estilos/style.css" as="style">
+    <link rel="stylesheet" href="../estilos/style.css">
+
+    <link rel="preload" href="../estilos/normalize.css" as="style">
+    <link rel="stylesheet" href="../estilos/normalize.css">
+
+    <link rel="preload" href="../img/blog1.jpg" as="imagen">
+
+    <title>Document</title>
+
+
+</head>
+<body>
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="h1__heading nm cc">Blog<span class="h1__span">Decafé</span></h1>     
+                </a>
+
+
+                <nav class="nav">
+                    <a href="nosotros.html" class="nav__enlace cc">nosotros</a>
+                    <a href="cursos.html" class="nav__enlace">cursos</a>
+                    <a href="contacto.html" class="nav__enlace">contactanos</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="nomargin">Blog de cafe con consejos y cursos</h2>
+            <p class="nomargin">aprende los expertos con las mejores resetas y consejos</p>
+        </div>
+    </header>
+
+    <div class="contenedor contenido__principal">
+        <main class="Blog">      
+
+            <h3>nuestro blog</h3>
+
+        
+            <article class="main__article">
+                <div class="article__img">
+                    <picture>
+                        <source srcset="../img/blog1.webp" type="image/webp"><!--esto lo que hara es que si carga el webp que es mas ligero lo ahra pero si el navegador no lo soporta cargara el jpg-->
+                        <img loading="lazy" src="../img/blog1.jpg" alt="imagen blog">
+                                <!--loading="lazy" sirve para que en algunos navegadores mientras se valla presentando la imagen se descargue-->
+                    </picture>
+                </div>
+            </article>   
+    
+
+            <div class="entrada__contenido">
+                <h4 class="nm">tipos de grano de cafe</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto culpa, tenetur minima dicta similique pariatur. Fugiat animi nisi vel magnam quis debitis sequi error! Rem ad totam repudiandae? Molestiae, aspernatur?</p>
+                <a href="entrada.html" class="bottom bottom_primario">leer entrada</a>
+            </div>
+            <article class="main__article">
+                <div class="article__img"><img loading="lazy" src="../img/blog2.jpg" alt="imagen blog"></div>
+            </article>
+
+            <div class="entrada__contenido">
+                <h4 class="nm">3 resertas deliciosas de cafe</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto culpa, tenetur minima dicta similique pariatur. Fugiat animi nisi vel magnam quis debitis sequi error! Rem ad totam repudiandae? Molestiae, aspernatur?</p>
+                <a href="entrada.html" class="bottom bottom_primario">leer entrada</a>
+            </div>
+            <article class="main__article">
+                <div class="article__img"><img loading="lazy" src="../img/blog3.jpg" alt="imagen blog"></div>
+            </article>
+
+            <div class="entrada__contenido">
+                <h4 class="nm">beneficios del cafe</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto culpa, tenetur minima dicta similique pariatur. Fugiat animi nisi vel magnam quis debitis sequi error! Rem ad totam repudiandae? Molestiae, aspernatur?</p>
+                <a href="entrada.html" class="bottom bottom_primario">leer entrada</a>
+            </div>
+        </main>
+        <aside class="SideBar">
+            <h3 class="aside__h3">nuestros cursos y talleres</h3>
+
+            <ul class="curso np">
+                <li class="widget_curso">
+                    <h4 class="nm">tecnicas de extraccion de cafe</h4>
+
+                    <p class="widget_curso__label"> precio:<span class="widget_curso__precio">gratis </span></p>
+                    <p class="widget_curso__label"> cupo:<span class="widget_curso__precio">20</span></p>
+                    <a href="entrada.html" class="bottom bottom_secundario">mas informacion</a>
+                </li>
+
+                <li class="widget_curso">
+                    <h4 class="nm">4 recetas de cafe para principiantes</h4>
+
+                    <p class="widget_curso__label"> precio:<span class="widget_curso__precio">gratis </span></p>
+                    <p class="widget_curso__label"> cupo:<span class="widget_curso__precio">20</span></p>
+                    <a href="entrada.html" class="bottom bottom_secundario">mas informacion</a>
+                </li>
+            </ul>
+        </aside>
+
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor ">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="h1__heading nm cc">Blog<span class="h1__span">Decafé</span></h1>     
+                </a>
+
+
+                <nav class="nav">
+                    <a href="nosotros.html" class="nav__enlace cc">nosotros</a>
+                    <a href="cursos.html" class="nav__enlace">cursos</a>
+                    <a href="contacto.html" class="nav__enlace">contactanos</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!--esto es una libreria y ayuda a que si soporta webp lo cargara sin ningun problema-->
+    <script src="../js/modernizer.js"></script>
+</body>
+</html>

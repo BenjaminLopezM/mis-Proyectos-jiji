@@ -1,0 +1,351 @@
+:root {
+  --fuenteheading: 'Open sans', sans-serif;
+  --fuenteparrafos: 'PT Sans', sans-serif;;
+  --claro:#e1e1e1;
+  --primario: #784d3c;
+  --blanco: #fff;
+  --negro: #000;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteparrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/*globales*/
+
+
+.contenedor{
+    max-width: 120rem ;
+    width: 90%;
+    /*width: min( 90%, 120rem); esta propiedad es nueva y lo que hace tomar el valor mas pequeño es como un mq que sea de min-width:465px*/
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4{
+    font-family: var(--fuenteheading) ;
+    line-height: 1.2;
+}
+
+h1{font-size: 4.8rem;}
+h2{font-size: 4rem;}
+h3{font-size: 3.2rem;}
+h4{font-size: 2.6rem;}
+
+img{
+    max-width: 100%;
+}
+
+/*Utilidades*/
+
+.nm{
+    margin: 0;
+}
+
+.np{
+    padding: 0;
+}
+
+.cc{
+    text-align: center;
+}
+
+/*header*/
+.webp , .header{
+    background-image: url(../img/banner.webp);
+}
+
+.no-webp, .header{
+    background-image: url(../img/banner.jpg);
+}
+.header{
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header__texto{
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+   .header__texto{
+    margin-top: 10rem;
+   }
+}
+
+@media (min-width: 768px) { 
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 3rem;
+    }
+}
+
+.logo{
+    color: var(--blanco);
+}
+
+.h1__heading{
+    font-weight: normal ;
+    transition: .3s ease;
+}
+
+.h1__heading:hover{
+    font-size: 5rem;
+}
+
+
+.h1__span{
+    font-weight: bold;
+    font-family:var(--fuenteheading) ;
+}
+
+
+/*navegacion*/
+
+
+.nav__enlace{
+    display: block;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--blanco);
+    transition: .2s;
+}
+
+.nav__enlace:hover{
+    color: #aaa;
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .nav{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+
+/*main*/
+@media (min-width: 768px) {
+    .contenido__principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr ;
+        column-gap: 4rem;
+        
+       
+    }
+}
+
+
+.entrada__contenido{
+    border-bottom: .2rem solid var(--claro);
+    margin-bottom: 4rem;
+}
+
+.entrada__contenido:last-of-type{
+    border-bottom: none;
+    margin: none
+    ;
+}
+
+.bottom{
+    display: block;
+    font-family: var(--fuenteheading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.bottom:hover{
+    cursor: pointer;
+}
+
+.bottom_primario{
+    background-color: var(--negro);
+}
+
+
+/*aside*/
+
+@media (min-width: 768px) {
+    .bottom_primario{
+        display: inline-block;/*los display:inline; no hacen caso a los margin ni a los width,por eso se lo cambia a inline.block ya que si respeta el width y el margin*/
+        background-color: var(--negro);
+        text-transform: uppercase;
+        text-align: center;
+        
+    }
+}
+
+.bottom_secundario{
+    background-color: var(--primario);
+
+}
+
+.curso{
+    list-style: none;
+}
+
+.widget_curso{
+    border-bottom: 1px solid var(--claro) ;
+    margin-bottom: 3rem;
+}
+
+.widget_curso__label{
+   font-family: var(--fuenteheading);
+   font-weight: normal;
+   font-size: 2rem;
+}
+
+.widget_curso__precio{
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+/*footer*/
+
+.footer{
+    background-color: var(--negro);
+    padding: 3rem 0 ;
+    margin-top: 4rem;
+}
+
+
+
+/*nostros.html*/
+
+/*main*/
+@media (min-width: 768px) {
+   /*.sobre__nosotros{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sobre__nosotros__contenido,
+  .sobre__nosotros__imagen{
+    flex: 0 0 calc(50% - 2rem);
+  }*/                    /*este codigo es por si lo quiero hacer con flex*/
+
+  .sobre__nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem; 
+  }                       /*y este con grid*/
+}
+
+/*cursos.html__main*/
+
+.cursos{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--claro);
+}
+
+@media (min-width: 768px) {
+    .cursos{
+        display: grid;
+        grid-template-columns: 33.3% 66.6%;
+        column-gap: 3rem;
+    }
+}
+
+.curso__label{
+    font-family: var(--fuenteheading);
+    font-weight: 700;
+}
+
+.curso__precio{
+    font-weight: 400;
+}
+
+.curso__label,
+.curso__precio{
+    font-size: 2rem;
+}
+
+.label__parrafo{
+    font-weight: 700;
+}
+
+
+/*entrada.html__main*/
+
+.main__entrada{
+    padding-top: 3rem;
+}
+
+
+.div__informationn{
+    font-weight: 700;
+}
+
+/*contacto__form*/
+
+.form__contacto{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--claro);
+    
+    
+}
+
+.campo__field__textarea{
+    height: 20rem;
+}
+
+
+
+
+
+.contacto__backgraund{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.bottom__submit{
+    border: none;
+    font-weight: 500;
+    padding: 1rem 3rem;
+}
